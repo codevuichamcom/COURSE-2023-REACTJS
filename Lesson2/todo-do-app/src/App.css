@@ -1,0 +1,10 @@
+.avatar {
+  border-radius: 50%;
+}
+.items {
+  color: green;
+}
+
+.items--fruit {
+  color: purple;
+}

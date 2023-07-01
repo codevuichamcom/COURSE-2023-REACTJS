@@ -1,0 +1,7 @@
+table {
+  width: 400px;
+}
+table tbody th {
+  display: flex;
+  justify-content: center;
+}

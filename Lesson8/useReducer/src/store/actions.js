@@ -1,0 +1,5 @@
+const ACTION = {
+  INCREATE_ACTION: "INCREASE",
+  DECREATE_ACTION: "DECREASE",
+};
+export { ACTION };

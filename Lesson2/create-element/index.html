@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const todos = [
+        "Go to school",
+        "Code & Fixbug",
+        "Hang out with girlfriend",
+      ];
+      function createLiTag(text) {
+        const liTag = document.createElement("li");
+        liTag.innerText = text;
+        return liTag;
+      }
+      const ulTag = document.createElement("ul");
+
+      todos.forEach((todo) => {
+        const liTag = createLiTag(todo);
+        ulTag.appendChild(liTag);
+      });
+
+      const rootTag = document.getElementById("root");
+
+      rootTag.appendChild(ulTag);
+
+      console.log(ulTag);
+    </script>
+  </body>
+</html>
